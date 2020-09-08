@@ -13,6 +13,11 @@
 			"type": "image/png"
 		},
 		{
+			"src": "./512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		},
+		{
 			"src": "favicon.ico",
 			"type": "image/x-icon",
 			"sizes": "64x64 32x32 24x24 16x16"

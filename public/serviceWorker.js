@@ -1,6 +1,6 @@
 const CACHE_NAME = 'weather-site-cache-v1';
 const urlsToCache = [
-    '/public',
+    '/',
   ];
 
   self.addEventListener('install', function(event) {
@@ -40,12 +40,18 @@ const urlsToCache = [
             }
           );
         })
-      );
-  });
+        .catch(function(err) {
+          return caches.open(urlsToCache)
+            .then(function(cache) {
+              return cache.match('/public/index.html');
+            });
+        })
+    )}
+    )
 
   self.addEventListener('activate', function(event) {
 
-    var cacheAllowlist = ['publi'];
+    var cacheAllowlist = ['public newer'];
 
     event.waitUntil(
       caches.keys().then(function(cacheNames) {

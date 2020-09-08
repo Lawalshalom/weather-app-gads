@@ -126,7 +126,7 @@ const dailyLabel = [];
 
 //fetch ip City on load
  async function fetchIpCity() {
-  if (window.localStorage.getItem("ipCity")){
+  if (window.localStorage.getItem("ipCityData")){
     document.getElementById("showIpCitySpan").innerHTML = window.localStorage.getItem("ipCity");
     const ipCityPredata = JSON.parse(window.localStorage.getItem("ipCityPredata"));
     const ipCityData = JSON.parse(window.localStorage.getItem("ipCityData"));
@@ -156,7 +156,7 @@ async function fetchCityWeather() {
   const newDate = new Date().setHours(0 ,0, 0, 0);
   const newUnixDate = Math.round(newDate/1000);
   const data = await res.json();
-  const newRes = await fetch (`http://api.openweathermap.org/data/2.5/onecall/timemachine?lat=${position.lat}&lon=${position.long}&dt=${newUnixDate}&appid=7b7f7b7feaf35626b45b57666f76dcde`);
+  const newRes = await fetch (`https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=${position.lat}&lon=${position.long}&dt=${newUnixDate}&appid=7b7f7b7feaf35626b45b57666f76dcde`);
   const dataHistory = await newRes.json();
   window.localStorage.setItem("ipCityPredata", JSON.stringify(predata));
   window.localStorage.setItem("ipCityData", JSON.stringify(data));
@@ -224,7 +224,7 @@ const weatherDiv = document.querySelector(".weatherDiv");
    const data = await res.json();
    const newDate = new Date().setHours(0 ,0, 0, 0);
    const newUnixDate = Math.round(newDate/1000);
-   const newRes = await fetch (`http://api.openweathermap.org/data/2.5/onecall/timemachine?lat=${latitude}&lon=${longitude}&dt=${newUnixDate}&appid=7b7f7b7feaf35626b45b57666f76dcde`);
+   const newRes = await fetch (`https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=${latitude}&lon=${longitude}&dt=${newUnixDate}&appid=7b7f7b7feaf35626b45b57666f76dcde`);
    const dataHistory = await newRes.json();
    window.localStorage.setItem("geolocationPredata", JSON.stringify(predata));
    window.localStorage.setItem("geolocationData", JSON.stringify(data));
@@ -263,7 +263,7 @@ const weatherDiv = document.querySelector(".weatherDiv");
      const data = await finalres.json();
      const newDate = new Date().setHours(0 ,0, 0, 0);
      const newUnixDate = Math.round(newDate/1000);
-     const newRes = await fetch (`http://api.openweathermap.org/data/2.5/onecall/timemachine?lat=${a}&lon=${b}&dt=${newUnixDate}&appid=7b7f7b7feaf35626b45b57666f76dcde`);
+     const newRes = await fetch (`https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=${a}&lon=${b}&dt=${newUnixDate}&appid=7b7f7b7feaf35626b45b57666f76dcde`);
      const dataHistory = await newRes.json();
      window.localStorage.setItem("searchCity", searchCity);
      window.localStorage.setItem("searchPredata", JSON.stringify(predata));
