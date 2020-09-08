@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	user-select: none;
 	&::-webkit-scrollbar {
 		display: none;
 	}
@@ -38,6 +39,14 @@ body {
 	border: 2px ridge rgb(117, 57, 0);
 	background-color: rgba(117, 57, 0, 0.8);
 }
+#particles-js {
+	position: fixed;
+	height: 100vh;
+	top: 0;
+	width: 100vw;
+	z-index: -1;
+}
+
 .myBtn:hover {
 	background-color: rgb(160, 82, 9);
 }

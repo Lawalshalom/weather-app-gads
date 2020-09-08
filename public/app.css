@@ -1,6 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 *::-webkit-scrollbar {
@@ -55,6 +59,14 @@ body {
   font-weight: 600;
   border: 2px ridge #753900;
   background-color: rgba(117, 57, 0, 0.8);
+}
+
+#particles-js {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
 }
 
 .myBtn:hover {
