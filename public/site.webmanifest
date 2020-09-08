@@ -23,7 +23,7 @@
 			"sizes": "64x64 32x32 24x24 16x16"
 		}
 	],
-	"start_url": "/public/index.html",
+	"start_url": "/",
 	"theme_color": "#ffffff",
 	"background_color": "#ffffff",
 	"display": "standalone"
