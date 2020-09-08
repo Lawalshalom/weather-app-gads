@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#0606af6e), to(rgba(255, 0, 0, 0.397)));
+  background: linear-gradient(to right, #0606af6e, rgba(255, 0, 0, 0.397));
+  -webkit-animation: slideInRight 2s;
+          animation: slideInRight 2s;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home {
+  margin-top: 15px;
+}
+
+.carousel-item img {
+  width: 95%;
+  border-radius: 20px;
+}
+
+.ip {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.geolocation {
+  margin-bottom: 2rem;
+}
+
+.myBtn {
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  border: 2px ridge #d37245;
+  background-color: #ec7608;
+}
+
+.myBtn:hover {
+  background-color: #a05209;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.myBtn:focus {
+  outline: none;
+}
+
+#geolocationbtn,
+#ipAddressBtn {
+  display: none;
+}
+
+.search {
+  margin-bottom: 2rem;
+}
+
+.search input {
+  margin-bottom: 1rem;
+  border-top: none;
+  background: transparent;
+  border-right: none;
+  border-bottom: none;
+  border-left: 1px solid #000;
+}
+
+.search input:focus {
+  border-left: none;
+  outline: none;
+}
+
+.weatherDiv {
+  display: none;
+  margin: 12px 10px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 1rem 3rem;
+}
+
+footer {
+  background: #fff;
+  margin: 12px 10px 0;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 5px 10px;
+}
+/*# sourceMappingURL=app.css.map */

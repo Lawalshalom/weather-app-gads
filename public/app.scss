@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+body {
+	background: linear-gradient(to right, #0606af6e, rgba(255, 0, 0, 0.397));
+	animation: slideInRight 2s;
+}
+
+.center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.home {
+	margin-top: 15px;
+}
+.carousel-item img {
+	width: 95%;
+	border-radius: 20px;
+}
+.ip {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+.geolocation {
+	margin-bottom: 2rem;
+}
+.myBtn {
+	padding: 5px 10px;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: 600;
+	border: 2px ridge rgb(211, 114, 69);
+	background-color: rgb(236, 118, 8);
+}
+.myBtn:hover {
+	background-color: rgb(160, 82, 9);
+	transition: all 1s;
+}
+.myBtn:focus {
+	outline: none;
+}
+#geolocationbtn,
+#ipAddressBtn {
+	display: none;
+}
+.search {
+	margin-bottom: 2rem;
+}
+.search input {
+	margin-bottom: 1rem;
+	border-top: none;
+	background: transparent;
+	border-right: none;
+	border-bottom: none;
+	border-left: 1px solid #000;
+}
+.search input:focus {
+	border-left: none;
+	outline: none;
+}
+.weatherDiv {
+	display: none;
+	margin: 12px 10px;
+	border-radius: 6px;
+	box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+	padding: 1rem 3rem;
+}
+
+footer {
+	background: #fff;
+	margin: 12px 10px 0;
+	border-radius: 6px;
+	box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+	padding: 5px 10px;
+}
