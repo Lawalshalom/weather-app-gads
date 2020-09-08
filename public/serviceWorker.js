@@ -51,7 +51,7 @@ const urlsToCache = [
 
   self.addEventListener('activate', function(event) {
 
-    var cacheAllowlist = ['public new'];
+    var cacheAllowlist = ['public'];
 
     event.waitUntil(
       caches.keys().then(function(cacheNames) {
