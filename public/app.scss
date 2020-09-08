@@ -10,7 +10,6 @@ body {
 	background: linear-gradient(to right, #0606af6e, rgba(255, 0, 0, 0.397));
 	animation: slideInRight 2s;
 }
-
 .center {
 	display: flex;
 	flex-direction: column;
@@ -46,7 +45,6 @@ body {
 	width: 100vw;
 	z-index: -1;
 }
-
 .myBtn:hover {
 	background-color: rgb(160, 82, 9);
 }
@@ -80,7 +78,6 @@ body {
 	background-color: #fff;
 	padding: 1rem 3rem;
 }
-
 footer {
 	background: #fff;
 	margin: 12px 10px 0;
